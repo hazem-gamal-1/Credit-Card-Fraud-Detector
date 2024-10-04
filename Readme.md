@@ -1,10 +1,6 @@
-Here's the updated **README** file to reflect the structure and usage of your `main.py` script:
 
----
 
-# Credit Card Fraud Detection
-
-This project focuses on detecting fraudulent credit card transactions using machine learning models. The primary challenge is to handle the highly imbalanced data effectively. Multiple resampling techniques and models are employed, and metrics like the F1 score and AUC-PR are used to evaluate performance.
+# Credit Card Fraud Detector
 
 ## Table of Contents
 - [Project Structure](#project-structure)
@@ -37,13 +33,12 @@ The project is structured as follows:
 ├── 🗂️ train.csv                                # Training dataset
 ```
 
-## Features and Dataset 📊
+## Datasets 📊
 
 The dataset includes two files:
 - **train.csv**: Training dataset for model development.
 - **test.csv**: Dataset used for model evaluation.
 
-Key features include metadata like transaction amounts, times, and vendor information.
 
 ## Sampling Techniques ⚖️
 
@@ -61,7 +56,6 @@ Two preprocessing options are available:
 
 ## Modeling 🧠
 
-This project supports several machine learning models:
 1. **Logistic Regression**: A linear model for classification.
 2. **Random Forest Classifier**: An ensemble of decision trees.
 3. **MLP Classifier**: A neural network classifier.
@@ -83,17 +77,6 @@ All configurations, models, and results are stored in JSON format under the `con
 - Evaluation metrics for both training and testing
 
 ## How to Run 🏃‍♂️
-
-### Prerequisites
-
-Ensure you have the following installed:
-- Python 3.x
-- Libraries listed in the `requirements.txt` file
-
-To install dependencies:
-```bash
-pip install -r requirements.txt
-```
 
 ### Run the Pipeline
 
@@ -120,9 +103,3 @@ This command:
 | `--preprocessor`    | Preprocessing method: `1` for MinMaxScaler, `2` for StandardScaler (required).                    | `--preprocessor=2`                                                                      |
 | `--model`           | Model to train: `1` for Logistic Regression, `2` for Random Forest, `3` for MLP, `4` for Voting. | `--model=4`                                                                             |
 | `--hyperparameters` | A JSON string containing hyperparameters for the selected model.                                  | `--hyperparameters='[{"n_estimators": 100, "max_depth": 10}]'`                          |
-
-The results, including metrics and model configurations, will be saved in the specified subfolder within the `configs_and_results/` directory.
-
----
-
-This README provides a structured overview of how the Credit Card Fraud Detection project is set up, how to run the models, and how to evaluate results. Let me know if any further modifications or clarifications are needed!
