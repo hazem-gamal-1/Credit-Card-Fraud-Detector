@@ -2,7 +2,7 @@
 
 ## Table of Contents
 ## Table of Contents
-- [Project Structure](#Project-Structure-🗂️)
+- [Project Structure](#Project-Structure)
 - [Datasets](#datasets-📊)
 - [Exploratory Data Analysis (Eda)](#exploratory-data-analysis-eda-📊)
 - [Sampling Techniques](#sampling-techniques-⚖️)
