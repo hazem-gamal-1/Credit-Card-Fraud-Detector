@@ -1,10 +1,9 @@
-
-
 # Credit Card Fraud Detector
 
 ## Table of Contents
 - [Project Structure](#project-structure)
 - [Features and Dataset](#features-and-dataset)
+- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
 - [Sampling Techniques](#sampling-techniques)
 - [Preprocessing](#preprocessing)
 - [Modeling](#modeling)
@@ -38,6 +37,14 @@ The project is structured as follows:
 The dataset includes two files:
 - **train.csv**: Training dataset for model development.
 - **test.csv**: Dataset used for model evaluation.
+
+## Exploratory Data Analysis (EDA) 📊
+
+The EDA notebook (`Credit Card Fraud Detection EDA.ipynb`) provides a comprehensive analysis of the dataset. Key components include:
+
+- **Data Visualization**: Insights into the distribution of features, correlation matrices.
+- **Descriptive Statistics**: Summary statistics that highlight key characteristics of the data.
+- **Class Distribution**: Analyzes the proportion of legitimate vs. fraudulent transactions to assess class imbalance.
 
 
 ## Sampling Techniques ⚖️
@@ -103,3 +110,9 @@ This command:
 | `--preprocessor`    | Preprocessing method: `1` for MinMaxScaler, `2` for StandardScaler (required).                    | `--preprocessor=2`                                                                      |
 | `--model`           | Model to train: `1` for Logistic Regression, `2` for Random Forest, `3` for MLP, `4` for Voting. | `--model=4`                                                                             |
 | `--hyperparameters` | A JSON string containing hyperparameters for the selected model.                                  | `--hyperparameters='[{"n_estimators": 100, "max_depth": 10}]'`                          |
+
+## Dependencies 📦
+- Python
+- pandas
+- scikit-learn
+- imbalanced-learn
