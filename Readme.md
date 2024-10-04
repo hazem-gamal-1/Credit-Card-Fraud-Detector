@@ -1,9 +1,10 @@
 # Credit Card Fraud Detector
 
 ## Table of Contents
-- [Project Structure](#project-structure-🗂️)
+## Table of Contents
+- [Project Structure](#Project-Structure-🗂️)
 - [Datasets](#datasets-📊)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda-📊)
+- [Exploratory Data Analysis (Eda)](#exploratory-data-analysis-eda-📊)
 - [Sampling Techniques](#sampling-techniques-⚖️)
 - [Preprocessing](#preprocessing-🔄)
 - [Modeling](#modeling-🧠)
