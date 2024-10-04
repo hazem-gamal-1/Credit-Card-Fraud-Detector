@@ -1,0 +1,31 @@
+{
+    "model_configuration": {
+        "sampler": {
+            "type": "OverSampling",
+            "ratio of the positive class": 0.002
+        },
+        "preprocessing": "StandardScaler",
+        "model": "MLPClassifier",
+        "hyperparameters": {
+            "activation": "relu",
+            "solver": "adam",
+            "hidden_layer_sizes": [
+                15,
+                10
+            ],
+            "max_iter": 100,
+            "alpha": 0.001
+        }
+    },
+    "metrics": {
+        "training": {
+            "best_threshold": 0.4119027704193303,
+            "f1_score": 0.9191616766467066,
+            "auc_pr": 0.8454283709516034
+        },
+        "testing": {
+            "f1_score": 0.8258706467661692,
+            "auc_pr": 0.6831363495620562
+        }
+    }
+}

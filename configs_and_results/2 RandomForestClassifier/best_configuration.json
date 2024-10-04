@@ -1,0 +1,25 @@
+{
+    "model_configuration": {
+        "sampler": {
+            "type": "UnderSampling",
+            "ratio of the positive class": 0.002
+        },
+        "preprocessing": "StandardScaler",
+        "model": "RandomForestClassifier",
+        "hyperparameters": {
+            "n_estimators": 25,
+            "max_depth": 20
+        }
+    },
+    "metrics": {
+        "training": {
+            "best_threshold": 0.38677197750370484,
+            "f1_score": 1.0,
+            "auc_pr": 1.0
+        },
+        "testing": {
+            "f1_score": 0.8770053475935828,
+            "auc_pr": 0.7704809830173622
+        }
+    }
+}
