@@ -31,6 +31,7 @@ The project is structured as follows:
 ├── 🚀 main.py                                  # Main script to run the model pipeline
 ├── 🗂️ test.csv                                 # Test dataset
 ├── 🗂️ train.csv                                # Training dataset
+└── 🗂️ val.csv                                  # Validation dataset
 ```
 
 ## Datasets 📊
