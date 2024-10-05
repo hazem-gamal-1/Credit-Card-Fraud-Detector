@@ -33,13 +33,6 @@ The project is structured as follows:
 ├── 🗂️ train.csv                                # Training dataset
 └── 🗂️ val.csv                                  # Validation dataset
 ```
-
-## Datasets 📊
-
-The dataset includes two files:
-- **train.csv**: Training dataset for model development.
-- **test.csv**: Dataset used for model evaluation.
-
 ## Exploratory Data Analysis (EDA) 📊
 
 The EDA notebook (`Credit Card Fraud Detection EDA.ipynb`) provides a comprehensive analysis of the dataset. Key components include:
