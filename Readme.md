@@ -78,7 +78,7 @@ All configurations, models, and results are stored in JSON format under the `con
 - Model hyperparameters
 - Evaluation metrics for both training and testing
 
-## How to Run 🏃‍♂️
+## How to Run 
 
 ### Run the Pipeline
 
