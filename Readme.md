@@ -44,4 +44,3 @@ These insights are derived from the Exploratory Data Analysis (EDA) conducted on
 | MLP Classifier            | 0.902              | 0.794             | 0.814            | 0.634            |
 | Voting Classifier         | 0.963              | 0.800             | 0.929            | 0.644            |
 
-All configurations and results are stored in JSON format under the `configs_and_results/` folder.
