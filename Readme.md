@@ -4,7 +4,6 @@ The **Credit Card Fraud Detector** project aims to develop a robust machine lear
 ## Table of Contents
 - [Key Insights](#key-insights) 
 - [Sampling Techniques](#sampling-techniques)
-- [Preprocessing](#preprocessing)
 - [Modeling](#modeling)
 - [Results](#Results)
 
@@ -28,11 +27,6 @@ These insights are derived from the Exploratory Data Analysis (EDA) conducted on
 2. **UnderSampling**: Reduces the number of majority class samples.
 3. **SMOTE**: Generates synthetic data for the minority class.
 4. **Combination**: Combines UnderSampling with OverSampling or SMOTE.
-
-## Preprocessing 
-
-1. **MinMaxScaler**: Scales features within a given range.
-2. **StandardScaler**: Standardizes features by removing the mean and scaling to unit variance.
 
 ## Modeling 
 
