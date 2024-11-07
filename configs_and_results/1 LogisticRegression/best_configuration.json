@@ -1,0 +1,27 @@
+{
+    "model_configuration": {
+        "sampler": {
+            "type": "UnderSampling",
+            "ratio of the positive class": 0.2
+        },
+        "preprocessing": "StandardScaler",
+        "model": "LogisticRegression",
+        "hyperparameters": {
+            "max_iter": 100,
+            "C": 0.01,
+            "penalty": "l2",
+            "solver": "lbfgs"
+        }
+    },
+    "metrics": {
+        "training": {
+            "best_threshold": 0.08139487655174783,
+            "f1_score": 0.8092868988391376,
+            "auc_pr": 0.6554795678097315
+        },
+        "testing": {
+            "f1_score": 0.8019323671497585,
+            "auc_pr": 0.6458877733959542
+        }
+    }
+}

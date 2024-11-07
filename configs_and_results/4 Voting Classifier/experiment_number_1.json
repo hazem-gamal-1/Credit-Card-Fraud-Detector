@@ -1,0 +1,60 @@
+{
+  "model_configuration": {
+    "sampler": {
+      "type": "OverSampling",
+      "ratio of the positive class": 0.002
+    },
+    "preprocessing": "StandardScaler",
+    "model": "VotingClassifier",
+    "hyperparameters": {
+      "estimators": [
+        [
+          "lr",
+          {
+            "max_iter": 100,
+            "C": 0.01,
+            "penalty": "l2",
+            "solver": "lbfgs"
+          }
+        ],
+        [
+          "rf",
+          {
+            "n_estimators": 25,
+            "max_depth": 20
+          }
+        ],
+        [
+          "mlp",
+          {
+            "hidden_layer_sizes": [
+              15,
+              10
+            ],
+            "activation": "relu",
+            "solver": "adam",
+            "max_iter": 100,
+            "alpha": 0.001
+          }
+        ]
+      ],
+      "weights": [
+        0.32,
+        0.35,
+        0.33
+      ],
+      "voting": "soft"
+    }
+  },
+  "metrics": {
+    "training": {
+      "best_threshold": 0.22574670319032186,
+      "f1_score": 0.9631728045325779,
+      "auc_pr": 0.9287810083652298
+    },
+    "testing": {
+      "f1_score": 0.8,
+      "auc_pr": 0.6439651156577612
+    }
+  }
+}
